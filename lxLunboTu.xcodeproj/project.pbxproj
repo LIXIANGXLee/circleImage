@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77292D9246DDC2B07932DDAE /* libPods-lxLunboTu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65955B460689127D63B72ACA /* libPods-lxLunboTu.a */; };
+		7C6042A21FBD27DE00D547D8 /* LXRotateImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6042A11FBD27DE00D547D8 /* LXRotateImageModel.m */; };
+		7C73698A1EE0F95E00699E7D /* qqViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7369891EE0F95E00699E7D /* qqViewController.m */; };
+		7CA66898208F06B2006652D9 /* LXRotateImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA66896208F06B2006652D9 /* LXRotateImageView.m */; };
+		BE1815671E67B75800B4D873 /* aaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1815661E67B75800B4D873 /* aaViewController.m */; };
+		BE223DE31E5E847A006D7427 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE223DE21E5E847A006D7427 /* main.m */; };
+		BE223DE61E5E847A006D7427 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE223DE51E5E847A006D7427 /* AppDelegate.m */; };
+		BE223DEE1E5E847B006D7427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE223DED1E5E847A006D7427 /* Assets.xcassets */; };
+		BE223DF11E5E847B006D7427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE223DEF1E5E847B006D7427 /* LaunchScreen.storyboard */; };
+		BE223DFC1E5E847B006D7427 /* lxLunboTuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE223DFB1E5E847B006D7427 /* lxLunboTuTests.m */; };
+		BE223E071E5E847B006D7427 /* lxLunboTuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE223E061E5E847B006D7427 /* lxLunboTuUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE223DF81E5E847B006D7427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE223DD61E5E847A006D7427 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE223DDD1E5E847A006D7427;
+			remoteInfo = lxLunboTu;
+		};
+		BE223E031E5E847B006D7427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE223DD61E5E847A006D7427 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE223DDD1E5E847A006D7427;
+			remoteInfo = lxLunboTu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DDAFCB960E17C0F733ED7C2 /* Pods-lxLunboTu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lxLunboTu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lxLunboTu/Pods-lxLunboTu.debug.xcconfig"; sourceTree = "<group>"; };
+		65955B460689127D63B72ACA /* libPods-lxLunboTu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lxLunboTu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6042A01FBD27DE00D547D8 /* LXRotateImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXRotateImageModel.h; sourceTree = "<group>"; };
+		7C6042A11FBD27DE00D547D8 /* LXRotateImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRotateImageModel.m; sourceTree = "<group>"; };
+		7C7369881EE0F95E00699E7D /* qqViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qqViewController.h; sourceTree = "<group>"; };
+		7C7369891EE0F95E00699E7D /* qqViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = qqViewController.m; sourceTree = "<group>"; };
+		7CA66896208F06B2006652D9 /* LXRotateImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRotateImageView.m; sourceTree = "<group>"; };
+		7CA66897208F06B2006652D9 /* LXRotateImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXRotateImageView.h; sourceTree = "<group>"; };
+		8CB5CD94140AAAEC593B69D9 /* Pods-lxLunboTu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lxLunboTu.release.xcconfig"; path = "Pods/Target Support Files/Pods-lxLunboTu/Pods-lxLunboTu.release.xcconfig"; sourceTree = "<group>"; };
+		BE1815651E67B75800B4D873 /* aaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aaViewController.h; sourceTree = "<group>"; };
+		BE1815661E67B75800B4D873 /* aaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aaViewController.m; sourceTree = "<group>"; };
+		BE223DDE1E5E847A006D7427 /* lxLunboTu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lxLunboTu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE223DE21E5E847A006D7427 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE223DE41E5E847A006D7427 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE223DE51E5E847A006D7427 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE223DED1E5E847A006D7427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE223DF01E5E847B006D7427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE223DF21E5E847B006D7427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE223DF71E5E847B006D7427 /* lxLunboTuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lxLunboTuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE223DFB1E5E847B006D7427 /* lxLunboTuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lxLunboTuTests.m; sourceTree = "<group>"; };
+		BE223DFD1E5E847B006D7427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE223E021E5E847B006D7427 /* lxLunboTuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lxLunboTuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE223E061E5E847B006D7427 /* lxLunboTuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lxLunboTuUITests.m; sourceTree = "<group>"; };
+		BE223E081E5E847B006D7427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE223DDB1E5E847A006D7427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77292D9246DDC2B07932DDAE /* libPods-lxLunboTu.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE223DF41E5E847B006D7427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE223DFF1E5E847B006D7427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D772E97E0E81E1D6F73DDC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DDAFCB960E17C0F733ED7C2 /* Pods-lxLunboTu.debug.xcconfig */,
+				8CB5CD94140AAAEC593B69D9 /* Pods-lxLunboTu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD95715D8D2A2809515E3B29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65955B460689127D63B72ACA /* libPods-lxLunboTu.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE223DD51E5E847A006D7427 = {
+			isa = PBXGroup;
+			children = (
+				BE223DE01E5E847A006D7427 /* lxLunboTu */,
+				BE223DFA1E5E847B006D7427 /* lxLunboTuTests */,
+				BE223E051E5E847B006D7427 /* lxLunboTuUITests */,
+				BE223DDF1E5E847A006D7427 /* Products */,
+				4D772E97E0E81E1D6F73DDC5 /* Pods */,
+				BD95715D8D2A2809515E3B29 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE223DDF1E5E847A006D7427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE223DDE1E5E847A006D7427 /* lxLunboTu.app */,
+				BE223DF71E5E847B006D7427 /* lxLunboTuTests.xctest */,
+				BE223E021E5E847B006D7427 /* lxLunboTuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE223DE01E5E847A006D7427 /* lxLunboTu */ = {
+			isa = PBXGroup;
+			children = (
+				BE223DE41E5E847A006D7427 /* AppDelegate.h */,
+				BE223DE51E5E847A006D7427 /* AppDelegate.m */,
+				BE223DED1E5E847A006D7427 /* Assets.xcassets */,
+				BE223DEF1E5E847B006D7427 /* LaunchScreen.storyboard */,
+				BE223DF21E5E847B006D7427 /* Info.plist */,
+				BE223DE11E5E847A006D7427 /* Supporting Files */,
+				7C6042A01FBD27DE00D547D8 /* LXRotateImageModel.h */,
+				7C6042A11FBD27DE00D547D8 /* LXRotateImageModel.m */,
+				7CA66897208F06B2006652D9 /* LXRotateImageView.h */,
+				7CA66896208F06B2006652D9 /* LXRotateImageView.m */,
+				BE1815651E67B75800B4D873 /* aaViewController.h */,
+				BE1815661E67B75800B4D873 /* aaViewController.m */,
+				7C7369881EE0F95E00699E7D /* qqViewController.h */,
+				7C7369891EE0F95E00699E7D /* qqViewController.m */,
+			);
+			path = lxLunboTu;
+			sourceTree = "<group>";
+		};
+		BE223DE11E5E847A006D7427 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE223DE21E5E847A006D7427 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE223DFA1E5E847B006D7427 /* lxLunboTuTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE223DFB1E5E847B006D7427 /* lxLunboTuTests.m */,
+				BE223DFD1E5E847B006D7427 /* Info.plist */,
+			);
+			path = lxLunboTuTests;
+			sourceTree = "<group>";
+		};
+		BE223E051E5E847B006D7427 /* lxLunboTuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE223E061E5E847B006D7427 /* lxLunboTuUITests.m */,
+				BE223E081E5E847B006D7427 /* Info.plist */,
+			);
+			path = lxLunboTuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE223DDD1E5E847A006D7427 /* lxLunboTu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE223E0B1E5E847B006D7427 /* Build configuration list for PBXNativeTarget "lxLunboTu" */;
+			buildPhases = (
+				12BBA96A7190D2A3B637DBDF /* [CP] Check Pods Manifest.lock */,
+				BE223DDA1E5E847A006D7427 /* Sources */,
+				BE223DDB1E5E847A006D7427 /* Frameworks */,
+				BE223DDC1E5E847A006D7427 /* Resources */,
+				BB5DE68DC1750810E0CBE0E7 /* [CP] Embed Pods Frameworks */,
+				F178764B1E6C3935100D285A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lxLunboTu;
+			productName = lxLunboTu;
+			productReference = BE223DDE1E5E847A006D7427 /* lxLunboTu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE223DF61E5E847B006D7427 /* lxLunboTuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE223E0E1E5E847B006D7427 /* Build configuration list for PBXNativeTarget "lxLunboTuTests" */;
+			buildPhases = (
+				BE223DF31E5E847B006D7427 /* Sources */,
+				BE223DF41E5E847B006D7427 /* Frameworks */,
+				BE223DF51E5E847B006D7427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE223DF91E5E847B006D7427 /* PBXTargetDependency */,
+			);
+			name = lxLunboTuTests;
+			productName = lxLunboTuTests;
+			productReference = BE223DF71E5E847B006D7427 /* lxLunboTuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE223E011E5E847B006D7427 /* lxLunboTuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE223E111E5E847B006D7427 /* Build configuration list for PBXNativeTarget "lxLunboTuUITests" */;
+			buildPhases = (
+				BE223DFE1E5E847B006D7427 /* Sources */,
+				BE223DFF1E5E847B006D7427 /* Frameworks */,
+				BE223E001E5E847B006D7427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE223E041E5E847B006D7427 /* PBXTargetDependency */,
+			);
+			name = lxLunboTuUITests;
+			productName = lxLunboTuUITests;
+			productReference = BE223E021E5E847B006D7427 /* lxLunboTuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE223DD61E5E847A006D7427 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = LMTeam;
+				TargetAttributes = {
+					BE223DDD1E5E847A006D7427 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PQCG9C2T9W;
+						ProvisioningStyle = Automatic;
+					};
+					BE223DF61E5E847B006D7427 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE223DDD1E5E847A006D7427;
+					};
+					BE223E011E5E847B006D7427 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE223DDD1E5E847A006D7427;
+					};
+				};
+			};
+			buildConfigurationList = BE223DD91E5E847A006D7427 /* Build configuration list for PBXProject "lxLunboTu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE223DD51E5E847A006D7427;
+			productRefGroup = BE223DDF1E5E847A006D7427 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE223DDD1E5E847A006D7427 /* lxLunboTu */,
+				BE223DF61E5E847B006D7427 /* lxLunboTuTests */,
+				BE223E011E5E847B006D7427 /* lxLunboTuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE223DDC1E5E847A006D7427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE223DF11E5E847B006D7427 /* LaunchScreen.storyboard in Resources */,
+				BE223DEE1E5E847B006D7427 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE223DF51E5E847B006D7427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE223E001E5E847B006D7427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12BBA96A7190D2A3B637DBDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB5DE68DC1750810E0CBE0E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lxLunboTu/Pods-lxLunboTu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F178764B1E6C3935100D285A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lxLunboTu/Pods-lxLunboTu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE223DDA1E5E847A006D7427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C73698A1EE0F95E00699E7D /* qqViewController.m in Sources */,
+				BE223DE61E5E847A006D7427 /* AppDelegate.m in Sources */,
+				7C6042A21FBD27DE00D547D8 /* LXRotateImageModel.m in Sources */,
+				BE1815671E67B75800B4D873 /* aaViewController.m in Sources */,
+				BE223DE31E5E847A006D7427 /* main.m in Sources */,
+				7CA66898208F06B2006652D9 /* LXRotateImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE223DF31E5E847B006D7427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE223DFC1E5E847B006D7427 /* lxLunboTuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE223DFE1E5E847B006D7427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE223E071E5E847B006D7427 /* lxLunboTuUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE223DF91E5E847B006D7427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE223DDD1E5E847A006D7427 /* lxLunboTu */;
+			targetProxy = BE223DF81E5E847B006D7427 /* PBXContainerItemProxy */;
+		};
+		BE223E041E5E847B006D7427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE223DDD1E5E847A006D7427 /* lxLunboTu */;
+			targetProxy = BE223E031E5E847B006D7427 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE223DEF1E5E847B006D7427 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE223DF01E5E847B006D7427 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE223E091E5E847B006D7427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE223E0A1E5E847B006D7427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE223E0C1E5E847B006D7427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DDAFCB960E17C0F733ED7C2 /* Pods-lxLunboTu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQCG9C2T9W;
+				INFOPLIST_FILE = lxLunboTu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LMTeamShare.lxLunboTu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE223E0D1E5E847B006D7427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB5CD94140AAAEC593B69D9 /* Pods-lxLunboTu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQCG9C2T9W;
+				INFOPLIST_FILE = lxLunboTu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LMTeamShare.lxLunboTu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE223E0F1E5E847B006D7427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = lxLunboTuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LMTeamShare.lxLunboTuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lxLunboTu.app/lxLunboTu";
+			};
+			name = Debug;
+		};
+		BE223E101E5E847B006D7427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = lxLunboTuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LMTeamShare.lxLunboTuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lxLunboTu.app/lxLunboTu";
+			};
+			name = Release;
+		};
+		BE223E121E5E847B006D7427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = lxLunboTuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LMTeamShare.lxLunboTuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = lxLunboTu;
+			};
+			name = Debug;
+		};
+		BE223E131E5E847B006D7427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = lxLunboTuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LMTeamShare.lxLunboTuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = lxLunboTu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE223DD91E5E847A006D7427 /* Build configuration list for PBXProject "lxLunboTu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE223E091E5E847B006D7427 /* Debug */,
+				BE223E0A1E5E847B006D7427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE223E0B1E5E847B006D7427 /* Build configuration list for PBXNativeTarget "lxLunboTu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE223E0C1E5E847B006D7427 /* Debug */,
+				BE223E0D1E5E847B006D7427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE223E0E1E5E847B006D7427 /* Build configuration list for PBXNativeTarget "lxLunboTuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE223E0F1E5E847B006D7427 /* Debug */,
+				BE223E101E5E847B006D7427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE223E111E5E847B006D7427 /* Build configuration list for PBXNativeTarget "lxLunboTuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE223E121E5E847B006D7427 /* Debug */,
+				BE223E131E5E847B006D7427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE223DD61E5E847A006D7427 /* Project object */;
+}
