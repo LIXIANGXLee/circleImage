@@ -10,6 +10,7 @@
 		77292D9246DDC2B07932DDAE /* libPods-lxLunboTu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65955B460689127D63B72ACA /* libPods-lxLunboTu.a */; };
 		7C6042A21FBD27DE00D547D8 /* LXRotateImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6042A11FBD27DE00D547D8 /* LXRotateImageModel.m */; };
 		7C73698A1EE0F95E00699E7D /* qqViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7369891EE0F95E00699E7D /* qqViewController.m */; };
+		7C9261032148F97D00C8CF96 /* LXProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9261022148F97D00C8CF96 /* LXProxy.m */; };
 		7CA66898208F06B2006652D9 /* LXRotateImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA66896208F06B2006652D9 /* LXRotateImageView.m */; };
 		BE1815671E67B75800B4D873 /* aaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1815661E67B75800B4D873 /* aaViewController.m */; };
 		BE223DE31E5E847A006D7427 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE223DE21E5E847A006D7427 /* main.m */; };
@@ -44,6 +45,8 @@
 		7C6042A11FBD27DE00D547D8 /* LXRotateImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRotateImageModel.m; sourceTree = "<group>"; };
 		7C7369881EE0F95E00699E7D /* qqViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qqViewController.h; sourceTree = "<group>"; };
 		7C7369891EE0F95E00699E7D /* qqViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = qqViewController.m; sourceTree = "<group>"; };
+		7C9261012148F97D00C8CF96 /* LXProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXProxy.h; sourceTree = "<group>"; };
+		7C9261022148F97D00C8CF96 /* LXProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXProxy.m; sourceTree = "<group>"; };
 		7CA66896208F06B2006652D9 /* LXRotateImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRotateImageView.m; sourceTree = "<group>"; };
 		7CA66897208F06B2006652D9 /* LXRotateImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXRotateImageView.h; sourceTree = "<group>"; };
 		8CB5CD94140AAAEC593B69D9 /* Pods-lxLunboTu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lxLunboTu.release.xcconfig"; path = "Pods/Target Support Files/Pods-lxLunboTu/Pods-lxLunboTu.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				BE1815661E67B75800B4D873 /* aaViewController.m */,
 				7C7369881EE0F95E00699E7D /* qqViewController.h */,
 				7C7369891EE0F95E00699E7D /* qqViewController.m */,
+				7C9261012148F97D00C8CF96 /* LXProxy.h */,
+				7C9261022148F97D00C8CF96 /* LXProxy.m */,
 			);
 			path = lxLunboTu;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 			files = (
 				7C73698A1EE0F95E00699E7D /* qqViewController.m in Sources */,
 				BE223DE61E5E847A006D7427 /* AppDelegate.m in Sources */,
+				7C9261032148F97D00C8CF96 /* LXProxy.m in Sources */,
 				7C6042A21FBD27DE00D547D8 /* LXRotateImageModel.m in Sources */,
 				BE1815671E67B75800B4D873 /* aaViewController.m in Sources */,
 				BE223DE31E5E847A006D7427 /* main.m in Sources */,
