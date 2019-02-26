@@ -9,19 +9,18 @@
 #import <UIKit/UIKit.h>
 
 @protocol LXRotateImageViewDelegate <NSObject>
-
-@required
-#pragma mark - This proxy is a data source method
-
--(NSArray *)lx_getImageDataSource;
-
 @optional
-
-#pragma mark - Click on the next page
+/*
+ *  Click on the next page
+ */
 -(void)lx_clickIntoNextPageWithIndex:(int)index;
-
 -(void)lx_clickIntoNextPageWithImageStr:(NSString *)imageStr;
 
+@required
+/*
+ * How to display pictures with external settings
+ */
+-(void)lx_setImageOfImageView:(UIImageView *)imageView imageStr:(NSString *)imageStr;
 @end
 
 @interface LXRotateImageView : UIView
@@ -29,6 +28,8 @@
 #pragma mark - Timer setting
 @property(nonatomic,assign)CGFloat lx_duration;
 
+#pragma mark - dataSource setting
+@property(nonatomic,strong)NSArray * imgDataSource;
 
 @property(nonatomic,strong)UIColor * lx_currentPageIndicatorTintColor;
 @property(nonatomic,strong)UIColor * lx_pageIndicatorTintColor;
@@ -39,7 +40,7 @@
 -(void)lx_stopTimer;
 
 
-#pragma mark - When you bacl this page, you need to call this timer start method
+#pragma mark - When you bacl this page, you need to call this timer start method  Default calls, do not recommend manual calls.
 -(void)lx_StartTimer;
 
 
