@@ -61,7 +61,7 @@
             
             [weakSelf rotateGo];
         }];
-
+        
         [[NSRunLoop currentRunLoop] addTimer: weakSelf.timer forMode:NSRunLoopCommonModes];
   
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
@@ -245,6 +245,7 @@
     }
     
     if ([self.imgDataSource count] > 0) {
+        
         LXRotateImageModel * mModel = self.imgDataSource[self.index % [self.imgDataSource count]];
         if ([self.delegate respondsToSelector:@selector(lx_setImageOfImageView:imageStr:)]) {
             [self.delegate lx_setImageOfImageView:_midMgView imageStr:mModel.img_str];
@@ -283,10 +284,10 @@
     }
 }
 
-
 -(void)dealloc{
     NSLog(@"----dealloc--%s",__func__);
     [self lx_stopTimer];
+
 }
 
 @end

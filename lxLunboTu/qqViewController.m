@@ -24,9 +24,10 @@
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-//     [_v lx_stopTimer];
-//     [_v lx_stopTimer];
-//     [_v lx_stopTimer];
+
+     [_v lx_stopTimer];
+     [_v lx_stopTimer];
+     [_v lx_stopTimer];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -45,7 +46,6 @@
   
        [self.view addSubview:v];
     _v = v;
-    
     
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSMutableArray * dataS = [NSMutableArray array];
@@ -67,7 +67,7 @@
     _l_tableView.delegate = self;
     _l_tableView.dataSource = self;    
     [_l_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    
+ 
     [self.view addSubview:_l_tableView];
 }
 
@@ -98,7 +98,7 @@
 
 -(void)lx_setImageOfImageView:(UIImageView *)imageView imageStr:(NSString *)imageStr{
     
-     [imageView sd_setImageWithURL:[NSURL URLWithString:imageStr]];
+    [imageView sd_setImageWithURL:[NSURL URLWithString:imageStr]];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -123,6 +123,7 @@
     NSLog(@"----dealloc--%s",__func__);
 //    [_v lx_stopTimer];
 //    [_v lx_stopTimer];
+
 }
 
 @end
