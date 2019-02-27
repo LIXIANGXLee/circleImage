@@ -10,4 +10,10 @@
 
 @implementation LXRotateImageModel
 
+-(void)setImg_s:(NSString *)img_s{
+    _img_s = img_s;
+    self.img_str = img_s;
+}
+@synthesize img_str;
+
 @end

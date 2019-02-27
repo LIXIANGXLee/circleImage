@@ -9,6 +9,8 @@
 #import "LXRotateImageView.h"
 #import "LXRotateImageModel.h"
 #import <objc/runtime.h>
+#import "LXProxy.h"
+
 #define SCREENWIDTH self.frame.size.width
 #define SCREENHEIGHT self.frame.size.height
 
@@ -57,24 +59,23 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         weakSelf.thread = [NSThread currentThread];
         
-        weakSelf.timer = [NSTimer timerWithTimeInterval:weakSelf.lx_duration ? weakSelf.lx_duration:2.0f repeats:YES block:^(NSTimer * _Nonnull timer) {
-            
-            [weakSelf rotateGo];
-        }];
+        if (@available(iOS 10.0, *)) {
+            weakSelf.timer = [NSTimer timerWithTimeInterval:weakSelf.lx_duration ? weakSelf.lx_duration:2.0f repeats:YES block:^(NSTimer * _Nonnull timer) {
+                [weakSelf rotateGo];
+            }];
+        } else {
+            weakSelf.timer = [NSTimer timerWithTimeInterval:self.lx_duration ? self.lx_duration:2.0f target:[LXProxy proxyWithTarget:self] selector:@selector(rotateGo) userInfo:nil repeats:YES];
+        }
         
         [[NSRunLoop currentRunLoop] addTimer: weakSelf.timer forMode:NSRunLoopCommonModes];
-  
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
-
         NSLog(@"-=-=-=-=end");
-        
     });
 }
 
 -(void)rotateGo{
     
     if (!_imgDataSource) return;
-    
     self.index ++ ;
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.scrollview setContentOffset:CGPointMake(SCREENWIDTH * 2, 0) animated:YES];
@@ -84,7 +85,7 @@
     });
 }
 
--(void)setImgDataSource:(NSArray *)imgDataSource{
+-(void)setImgDataSource:(NSArray<LXRotateImageProtocol> *)imgDataSource{
     _imgDataSource = imgDataSource;
     if (!_imgDataSource) return;
     
@@ -92,7 +93,6 @@
     self.pageControl.numberOfPages = [self.imgDataSource count] ;
     self.pageControl.hidden = !([self.imgDataSource count]>1);
     [self.scrollview setContentOffset:CGPointMake(SCREENWIDTH * 2, 0) animated:YES];
-    
     
     if ([_imgDataSource count] >1) {
         [self lx_StartTimer];
@@ -118,7 +118,7 @@
         _leftImgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
         _leftImgView.userInteractionEnabled = YES;
         if ([self.imgDataSource count] > 1) {
-            LXRotateImageModel * lModel = self.imgDataSource[[self.imgDataSource count] - 1];
+            id<LXRotateImageProtocol>lModel = self.imgDataSource[[self.imgDataSource count] - 1];
             if ([self.delegate respondsToSelector:@selector(lx_setImageOfImageView:imageStr:)]) {
                 [self.delegate lx_setImageOfImageView:_leftImgView imageStr:lModel.img_str];
             }
@@ -132,7 +132,7 @@
         _midMgView = [[UIImageView alloc]initWithFrame:CGRectMake(SCREENWIDTH, 0, SCREENWIDTH, SCREENHEIGHT)];
         _midMgView.userInteractionEnabled = YES;
         if ([self.imgDataSource count] > 0) {
-            LXRotateImageModel * mModel = self.imgDataSource[0];
+           id<LXRotateImageProtocol>mModel = self.imgDataSource[0];
             if ([self.delegate respondsToSelector:@selector(lx_setImageOfImageView:imageStr:)]) {
                 [self.delegate lx_setImageOfImageView:_midMgView imageStr:mModel.img_str];
             }
@@ -154,7 +154,7 @@
         _rightImgView = [[UIImageView alloc]initWithFrame:CGRectMake(SCREENWIDTH *2, 0, SCREENWIDTH, SCREENHEIGHT)];
         _rightImgView.userInteractionEnabled = YES;
         if ([self.imgDataSource count] > 1) {
-            LXRotateImageModel * rModel = self.imgDataSource[1];
+           id<LXRotateImageProtocol>rModel = self.imgDataSource[1];
             if ([self.delegate respondsToSelector:@selector(lx_setImageOfImageView:imageStr:)]) {
                 [self.delegate lx_setImageOfImageView:_rightImgView imageStr:rModel.img_str];
             }
@@ -188,7 +188,7 @@
     }
     
     if (_delegate && [_delegate respondsToSelector:@selector(lx_clickIntoNextPageWithImageStr:)]) {
-        LXRotateImageModel * lModel = self.imgDataSource[self.index % [self.imgDataSource count]];
+       id<LXRotateImageProtocol>lModel = self.imgDataSource[self.index % [self.imgDataSource count]];
         [_delegate lx_clickIntoNextPageWithImageStr:lModel.img_str];
     }
 }
@@ -234,11 +234,11 @@
     
     if ([self.imgDataSource count] > 1) {
         
-        LXRotateImageModel * lModel = self.imgDataSource[(self.index - 1) % [self.imgDataSource count]];
+        id<LXRotateImageProtocol>lModel = self.imgDataSource[(self.index - 1) % [self.imgDataSource count]];
         if ([self.delegate respondsToSelector:@selector(lx_setImageOfImageView:imageStr:)]) {
             [self.delegate lx_setImageOfImageView:_leftImgView imageStr:lModel.img_str];
         }
-        LXRotateImageModel * rModel = self.imgDataSource[(self.index + 1) % [self.imgDataSource count]];
+        id<LXRotateImageProtocol>rModel = self.imgDataSource[(self.index + 1) % [self.imgDataSource count]];
         if ([self.delegate respondsToSelector:@selector(lx_setImageOfImageView:imageStr:)]) {
             [self.delegate lx_setImageOfImageView:_rightImgView imageStr:rModel.img_str];
         }
@@ -246,7 +246,7 @@
     
     if ([self.imgDataSource count] > 0) {
         
-        LXRotateImageModel * mModel = self.imgDataSource[self.index % [self.imgDataSource count]];
+        id<LXRotateImageProtocol>mModel = self.imgDataSource[self.index % [self.imgDataSource count]];
         if ([self.delegate respondsToSelector:@selector(lx_setImageOfImageView:imageStr:)]) {
             [self.delegate lx_setImageOfImageView:_midMgView imageStr:mModel.img_str];
         }
@@ -255,7 +255,12 @@
 
 -(void)lx_StartTimer{
     
-    [self __start];
+    if (self.imgDataSource.count > 1) {
+          [self __start];
+    }else{
+         [self __stop];
+    }
+  
 }
 
 -(void)lx_stopTimer{

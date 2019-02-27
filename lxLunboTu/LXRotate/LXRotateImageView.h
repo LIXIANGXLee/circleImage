@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LXRotateImageProtocol.h"
 
 @protocol LXRotateImageViewDelegate <NSObject>
 @optional
@@ -29,7 +30,7 @@
 @property(nonatomic,assign)CGFloat lx_duration;
 
 #pragma mark - dataSource setting
-@property(nonatomic,strong)NSArray * imgDataSource;
+@property(nonatomic,strong)NSArray <LXRotateImageProtocol>* imgDataSource;
 
 @property(nonatomic,strong)UIColor * lx_currentPageIndicatorTintColor;
 @property(nonatomic,strong)UIColor * lx_pageIndicatorTintColor;

@@ -25,17 +25,17 @@
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
 
-     [_v lx_stopTimer];
-     [_v lx_stopTimer];
-     [_v lx_stopTimer];
+//     [_v lx_stopTimer];
+//     [_v lx_stopTimer];
+//     [_v lx_stopTimer];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    [_v lx_StartTimer];
-     [_v lx_StartTimer];
-    [_v lx_StartTimer];
+//    [_v lx_StartTimer];
+//     [_v lx_StartTimer];
+//    [_v lx_StartTimer];
 
 }
 
@@ -50,13 +50,13 @@
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSMutableArray * dataS = [NSMutableArray array];
         LXRotateImageModel * model = [[LXRotateImageModel alloc]init];
-        model.img_str = @"http://img5.imgtn.bdimg.com/it/u=1244820289,2116300780&fm=200&gp=0.jpg";
+        model.img_s = @"http://img5.imgtn.bdimg.com/it/u=1244820289,2116300780&fm=200&gp=0.jpg";
         [dataS addObject:model];
         
-        LXRotateImageModel * model1 = [[LXRotateImageModel alloc]init];
-        model1.img_str = @"http://img1.imgtn.bdimg.com/it/u=2293999807,2071077178&fm=200&gp=0.jpg";
-        [dataS addObject:model1];
-        
+//        LXRotateImageModel * model1 = [[LXRotateImageModel alloc]init];
+//        model1.img_s = @"http://img1.imgtn.bdimg.com/it/u=2293999807,2071077178&fm=200&gp=0.jpg";
+//        [dataS addObject:model1];
+    
         _v.imgDataSource = dataS;
         
 //    });
@@ -76,12 +76,12 @@
     
     NSMutableArray * dataS = [NSMutableArray array];
     LXRotateImageModel * model = [[LXRotateImageModel alloc]init];
-    model.img_str = @"http://img5.imgtn.bdimg.com/it/u=1244820289,2116300780&fm=200&gp=0.jpg";
+    model.img_s = @"http://img5.imgtn.bdimg.com/it/u=1244820289,2116300780&fm=200&gp=0.jpg";
     [dataS addObject:model];
-    
-    LXRotateImageModel * model1 = [[LXRotateImageModel alloc]init];
-    model1.img_str = @"http://img1.imgtn.bdimg.com/it/u=2293999807,2071077178&fm=200&gp=0.jpg";
-    [dataS addObject:model1];
+//    
+//    LXRotateImageModel * model1 = [[LXRotateImageModel alloc]init];
+//    model1.img_s = @"http://img1.imgtn.bdimg.com/it/u=2293999807,2071077178&fm=200&gp=0.jpg";
+//    [dataS addObject:model1];
     
     _v.imgDataSource = dataS;
 }

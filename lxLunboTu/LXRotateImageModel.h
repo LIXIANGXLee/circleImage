@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LXRotateImageProtocol.h"
+@interface LXRotateImageModel : NSObject<LXRotateImageProtocol>
 
-@interface LXRotateImageModel : NSObject
-
-@property(nonatomic,copy)NSString * img_str;
+@property(nonatomic,copy)NSString * img_s;
 
 @end
